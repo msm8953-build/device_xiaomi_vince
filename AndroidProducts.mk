@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_vince.mk
+    $(LOCAL_DIR)/derp_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_vince-user \
-    arrow_vince-userdebug \
-    arrow_vince-eng
+    derp_vince-user \
+    derp_vince-userdebug \
+    derp_vince-eng
