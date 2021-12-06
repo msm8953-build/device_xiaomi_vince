@@ -21,3 +21,8 @@ allow qti_init_shell sysfs_leds:dir setattr;
 allow qti_init_shell sysfs_leds:file setattr;
 allow qti_init_shell vfat:dir { open read search };
 allow qti_init_shell vfat:file { getattr open read };
+
+#============= qti_init_shell ==============
+allow qti_init_shell qti_init_shell:capability dac_override;
+get_prop(qti_init_shell, default_prop)
+allow qti_init_shell system_data_file:file unlink;

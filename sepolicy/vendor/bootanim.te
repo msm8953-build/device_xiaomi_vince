@@ -1,1 +1,5 @@
 allow bootanim userspace_reboot_exported_prop:file { getattr read open };
+
+allow bootanim system_data_file:dir read;
+get_prop(bootanim, bootanim_system_prop)
+allow bootanim vendor_file:file { execute getattr open read };
